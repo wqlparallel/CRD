@@ -1,0 +1,17 @@
+domain: my.domin
+layout:
+- go.kubebuilder.io/v3
+multigroup: true
+projectName: example
+repo: my.domain/example
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: my.domin
+  group: example
+  kind: Guestbook
+  path: my.domain/example/apis/example/v1
+  version: v1
+version: "3"
